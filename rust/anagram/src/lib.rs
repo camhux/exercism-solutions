@@ -8,11 +8,11 @@ pub fn anagrams_for<'a>(target: &'a str, candidates: &[&'a str])
     for letter in target.chars() {
         let letter = char_to_lowercase(letter.clone());
 
-        let bucket = target_char_map
+        let ct = target_char_map
             .entry(letter.clone())
             .or_insert(0);
 
-        *bucket += 1;
+        *ct += 1;
     }
 
     candidates.into_iter().filter(|&s| {
