@@ -8,7 +8,5 @@ pub fn sum_of_squares(n: i64) -> i64 {
 }
 
 pub fn difference(n: i64) -> i64 {
-    let s1 = square_of_sum(n);
-    let s2 = sum_of_squares(n);
-    s1 + (-s2)
+   square_of_sum(n) - sum_of_squares(n)
 }
