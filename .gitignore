@@ -1,2 +1,5 @@
 *.md
 target
+**/build/**
+**/.idea/**
+**/.gradle/**
